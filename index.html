@@ -42,6 +42,21 @@
             text-shadow: 0 0 4px #ff00e6, 0 0 8px #ff00e6, 0 0 13px #ff00e6;
         }
 
+        h2 {
+            font-size: 2.5rem;
+            color: #ff00e6; /* Neon pink */
+            margin-top: 20px;
+        }
+
+        blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #aaa;
+            margin-top: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
         main {
             flex-grow: 1;
             display: flex;
@@ -52,7 +67,8 @@
 
         .button-container {
             display: flex;
-            gap: 100px; /* Larger gap between buttons */
+            gap: 40px; /* Moderate gap between buttons */
+            margin-top: 40px;
         }
 
         .btn {
@@ -103,18 +119,36 @@
                 font-size: 3rem; /* Slightly smaller heading on medium screens */
             }
 
+            h2 {
+                font-size: 2rem; /* Adjusted subtitle for medium screens */
+            }
+
+            blockquote {
+                font-size: 1.2rem; /* Slightly smaller quote font */
+            }
+
             .button-container {
-                gap: 40px; /* Slightly reduced gap between buttons */
+                gap: 30px; /* Slightly reduced gap for medium screens */
             }
 
             .btn {
-                font-size: 1.1rem; /* Slightly smaller font size for buttons */
+                font-size: 1.1rem; /* Adjusted font size for buttons on medium screens */
             }
         }
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem; /* Reduced heading size on smaller screens */
+                font-size: 2.5rem; /* Smaller heading on small screens */
+            }
+
+            h2 {
+                font-size: 1.8rem; /* Adjusted subtitle font size */
+            }
+
+            blockquote {
+                font-size: 1rem; /* Smaller quote text */
+                margin-top: 15px; /* Less space above the quote */
+                max-width: 90%; /* Ensure the quote takes up more width */
             }
 
             .button-container {
@@ -123,7 +157,7 @@
             }
 
             .btn {
-                width: 100%; /* Make buttons full width */
+                width: 100%; /* Make buttons full width on small screens */
                 padding: 12px 0; /* Adjust padding for better appearance */
                 font-size: 1.1rem; /* Slightly reduced font size */
             }
@@ -132,6 +166,15 @@
         @media (max-width: 480px) {
             h1 {
                 font-size: 2rem; /* Further reduced heading size for very small screens */
+            }
+
+            h2 {
+                font-size: 1.5rem; /* Smaller subtitle for very small screens */
+            }
+
+            blockquote {
+                font-size: 0.9rem; /* Even smaller quote text */
+                margin-top: 10px; /* Less space above the quote */
             }
 
             .btn {
@@ -144,16 +187,22 @@
 <body>
     <header>
         <h1>THE NABESOF</h1>
+        <blockquote>"If Youre Heart Is Clear Than Welcome Dear"</blockquote>
+        <h2>Main Channels</h2>
     </header>
     <main>
         <div class="button-container">
             <!-- Button 1: Link to an external website -->
-            <a href="https://www.example.com" target="_blank">
-                <button class="btn">MAIN CHANNELS</button>
+            <a href="https://whatsapp.com/channel/0029VaOeUJVGzzKXTepU1q17" target="_blank">
+                <button class="btn">WHATSAPP</button>
             </a>
             <!-- Button 2: Link to another external website -->
-            <a href="https://www.anotherexample.com" target="_blank">
-                <button class="btn">ALL CHANNELS</button>
+            <a href="https://t.me/nabesofhacks" target="_blank">
+                <button class="btn">TELEGRAM</button>
+            </a>
+            <!-- Button 3: Link to another external website -->
+            <a href="www.youtube.com/@NRN300" target="_blank">
+                <button class="btn">YOUTUBE</button>
             </a>
         </div>
     </main>
